@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="./reset.css" />
 	<link rel="stylesheet" type="text/css" href="./ui.css" />
-	<link rel="stylesheet" href="./fa/web-fonts-with-css/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="./fa/css/fontawesome-all.min.css">
 	<title>Monster Reincarnation | Game</title>
 </head>
 <body>
@@ -34,29 +34,35 @@
 						</div>
 					</div>
 					<div class="button-menu">
-						<div class="party-button">
+						<div class="party-button" onclick="openMenu('user')">
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</div>
-						<div class="party-button">
+						<div class="party-button" onclick="openMenu('talk')">
 							<i class="fa fa-comment" aria-hidden="true"></i>
 						</div>
-						<div class="party-button">
+						<div class="party-button" onclick="openMenu('inventory')">
 							<i class="fa fa-suitcase" aria-hidden="true"></i>
 						</div>
-						<div class="party-button">
+						<div class="party-button" onclick="openMenu('bond')">
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</div>
-						<div class="party-button">
+						<div class="party-button" onclick="openMenu('dismiss')">
 							<i class="fa fa-arrow-right" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
 
 			</div>
-			<canvas class="minimap"></canvas>
+			<canvas id="minimap" height="240" width="240"></canvas>
 		</div>
-		<div class="display-window"></div>
+		<div class="display-window">
+			
+		</div>
 	</div>
-	<script type="text/javascript" src="./js/game.js"></script>
+
+	<!-- Engine -->
+	<script type="text/javascript" src="./js/party.js"></script>
+	<script type="text/javascript" src="./js/minimap.js"></script>
+
 </body>
 </html>
