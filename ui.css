@@ -2,12 +2,16 @@
 body {
 	overflow: hidden;
 
+	background: #656565;
+
 	display: flex;
 	justify-content: center;
 }
 
 .game-container {
 	overflow: hidden;
+
+	background: url('./assets/background.gif');
 
 	height: 640px;
 	width: 960px;
@@ -155,21 +159,26 @@ body {
 #minimap {
 	background: #000000;
 
-	height: 240px;
-	width: 240px;
+	height: 230px;
+	width: 230px;
 
 	align-self: flex-end;
 
+	border: 5px #FFFFFF solid;
 	border-radius: 100%;
 
 	user-select: none;
 }
 
-.display-window {
+#display-window {
 	overflow-y: scroll;
 
-	height: 640px;
-	width: 720px;
+	background: #CFCFCF;
+
+	height: 636px;
+	width: 716px;
+
+	border: 2px #FFFFFF solid;
 }
 
 #display-window::-webkit-scrollbar {
