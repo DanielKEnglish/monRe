@@ -1,7 +1,6 @@
 
 body {
 	overflow: hidden;
-	background: #555555;
 
 	display: flex;
 	justify-content: center;
@@ -9,7 +8,6 @@ body {
 
 .game-container {
 	overflow: hidden;
-	background: #656565;
 
 	height: 640px;
 	width: 960px;
@@ -26,21 +24,21 @@ body {
 }
 
 #party-menu {
-	overflow: auto;
+	overflow-y: scroll;
 
-	background: #00FF00;
-	
 	height: 400px;
 	width: 240px;
 
 	font-family: sans-serif;
 }
 
-.party-member {
-	background: #FFFFFF;
+#party-menu::-webkit-scrollbar {
+	width: 0;
+}
 
+.party-member {
 	height: 100px;
-	width: 223px;
+	width: 240px;
 
 	display: flex;
 }
@@ -50,15 +48,24 @@ body {
 
 	height: 100px;
 	width: 100px;
+}
 
-	border-left: 1px #000000 solid;
+.avatar img {
+	height: 100px;
+	width: 100px;
+
+	user-select: none;
+}
+
+.avatar:hover {
+	background: #FFFFFF;
 }
 
 .status-card {
 	background: #858585;
 
 	height: 100px;
-	width: 100px;
+	width: 120px;
 
 	display: flex;
 	flex-direction: column;
@@ -79,7 +86,7 @@ body {
 	background: #0000FF;
 
 	height: 80px;
-	width: 100px;
+	width: 120px;
 
 	display: flex;
 	flex-direction: column;
@@ -93,13 +100,14 @@ body {
 	font-size: 14px;
 	padding: 3px;
 	text-align: center;
+	user-select: none;
 }
 
 .status-bar {
 	background: #000000;
 
 	height: 20px;
-	width: 100px;
+	width: 120px;
 }
 
 .health-bar {
@@ -122,7 +130,7 @@ body {
 	background: orange;
 
 	height: 100px;
-	width: 22px;
+	width: 20px;
 
 	display: flex;
 	flex-direction: column;
@@ -130,12 +138,18 @@ body {
 }
 
 .party-button {
-	height: 20px;
-	width: 20px;
+	height: 18px;
+	width: 18px;
+
+	border: 1px #000000 solid;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.party-button:hover {
+	background: gold;
 }
 
 #minimap {
@@ -145,11 +159,19 @@ body {
 	width: 240px;
 
 	align-self: flex-end;
+
+	border-radius: 100%;
+
+	user-select: none;
 }
 
 .display-window {
-	background: #FF0000;
+	overflow-y: scroll;
 
 	height: 640px;
 	width: 720px;
+}
+
+#display-window::-webkit-scrollbar {
+	width: 0;
 }

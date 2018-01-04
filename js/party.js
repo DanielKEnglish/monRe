@@ -3,7 +3,7 @@
 let partyMenu = document.getElementById("party-menu")
 let party = []
 
-function PartyMember(name, HP, cHP, MP, cMP, SP, cSP, WP, cWP){
+function PartyMember(name){
 	this.name = name || null
 	this.HP = HP || 100
 	this.cHP = cHP || 100
