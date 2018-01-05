@@ -111,12 +111,3 @@ let PlayerF = {}
 	PlayerF.map = null
 	PlayerF.x = 0
 	PlayerF.y = 0
-
-
-
-
-
-party.push(Player)
-party.push(PlayerF)
-
-displayParty()	

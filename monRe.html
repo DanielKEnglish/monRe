@@ -57,10 +57,42 @@
 				-->
 
 			</div>
-			<canvas id="minimap" height="240" width="240"></canvas>
+			<div class="special-container">
+				<canvas id="minimap" height="240" width="240"></canvas>
+				<div class="gb-wrapper">
+					<div class="gbtr-wrapper">
+						<div class="new-game gb" onclick="NewGame()"><p>NEW</p></div>
+						<div class="quit-game gb" onclick="QuitGame()"><p>QUIT</p></div>
+					</div>
+					<div class="gbbr-wrapper">
+						<div class="load-game gb" onclick="Save()"><p>SAVE</p></div>
+						<div class="save-game gb" onclick="Load()"><p>LOAD</p></div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="display-window">
-			
+			<div id="text-container">
+				<br/>
+				<p class="right">v 0.0.5</p>
+				<br/>
+				<br/>
+				<p>Welcome to <b>monRe</b>, a HTML-based text game.</p>
+				<br/>
+				<p><b>monRe</b> is the work on an amateur, and thus should be treated as such. You will find bad-practice coding, too much DOM manipulation, and poor design choices.</p>
+				<br/>
+				<p>Still, if you find yourself enjoying this work, please let me know! :)</p>
+				<br/>
+				<br/>
+				<p><b>monRe</b> is still in its earliest stages of development, so expect many bugs and missing features.</p>
+				<br/>
+				<p>Should you wish to contribute, visit <a href="https://www.github.com/DanielKEnglish/monRe">the repo on Github</a> or drop a message in QQ.</p>
+				<br/>
+				<p>Many thanks for visiting.</p>
+				<br/>
+				<p class="signature">- Daniel K. English</p>
+
+			</div>
 		</div>
 	</div>
 
@@ -81,6 +113,8 @@
 
 	<!-- Initialize -->
 	<script type="text/javascript" src="./js/init.js"></script>
+	
+	<script type="text/javascript" src="./js/Game.js"></script>
 
 </body>
 </html>

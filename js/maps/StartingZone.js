@@ -1,6 +1,6 @@
 
 
-let dummyMap = [
+let mapStartingMap = [
 	[0,0,0,0,0,0],
 	[0,0,0,0,0,0],
 	[0,0,0,0,0,0],

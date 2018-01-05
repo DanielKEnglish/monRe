@@ -1,6 +1,6 @@
 
 
-const eDisplay = document.getElementById("display-window")
+const eDisplay = document.getElementById("text-container")
 
 let eDisplayState = null
 
