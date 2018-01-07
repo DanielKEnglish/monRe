@@ -1,6 +1,5 @@
 
 /*
-//
 //	This file handles minimap rendering logic.
 //
 //	Rendering logic includes both the "camera" movement and the clear/draw.
@@ -10,17 +9,12 @@
 //	Next, it takes that map's layout data from Map.
 //
 //	Then, using the values on the layout, it pans the "camera" and renders the map.
-//
 */
 
-/* SETUP */
+const eMinimap = document.getElementById("minimap")
+const ctx = eMinimap.getContext("2d")
 
-	const eMinimap = document.getElementById("minimap")
-	const ctx = eMinimap.getContext("2d")
-
-	let cMap
-
-/*=======*/
+let cMap
 
 function MinimapInit(){
 	enableKeys()
